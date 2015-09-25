@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A710A4FF1607556000437D36"
-               BuildableName = "libDTFoundation_Mac.a"
-               BlueprintName = "Static Library (Mac)"
+               BlueprintIdentifier = "A7EA07B71A2B2F6A00B61CCE"
+               BuildableName = "DTFoundation.framework"
+               BlueprintName = "DTFoundation (iOS)"
                ReferencedContainer = "container:DTFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A7917C76191A312600964D63"
+               BuildableName = "Unit Tests.xctest"
+               BlueprintName = "Unit Tests"
+               ReferencedContainer = "container:DTFoundation.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A7EA07B71A2B2F6A00B61CCE"
+            BuildableName = "DTFoundation.framework"
+            BlueprintName = "DTFoundation (iOS)"
+            ReferencedContainer = "container:DTFoundation.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -45,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A710A4FF1607556000437D36"
-            BuildableName = "libDTFoundation_Mac.a"
-            BlueprintName = "Static Library (Mac)"
+            BlueprintIdentifier = "A7EA07B71A2B2F6A00B61CCE"
+            BuildableName = "DTFoundation.framework"
+            BlueprintName = "DTFoundation (iOS)"
             ReferencedContainer = "container:DTFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -60,6 +79,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A7EA07B71A2B2F6A00B61CCE"
+            BuildableName = "DTFoundation.framework"
+            BlueprintName = "DTFoundation (iOS)"
+            ReferencedContainer = "container:DTFoundation.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

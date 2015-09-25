@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'DTFoundation'
-  spec.version      = '1.7.3'
+  spec.version      = '1.7.7'
   spec.summary      = "Standard toolset classes and categories."
   spec.homepage     = "https://github.com/Cocoanetics/DTFoundation"
   spec.author       = { "Oliver Drobnik" => "oliver@cocoanetics.com" }
@@ -59,6 +59,7 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'DTHTMLParser' do |ss|
     ss.ios.deployment_target = '4.3'
+    ss.osx.deployment_target = '10.6'
     ss.dependency 'DTFoundation/Core'
     ss.source_files = 'Core/Source/DTHTMLParser/*.{h,m}'
     ss.library = 'xml2'
@@ -74,7 +75,7 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'DTSidePanel' do |ss|
-    ss.platform = :ios, '5.0'
+    ss.platform = :ios, '6.0'
     ss.dependency 'DTFoundation/UIKit'
     ss.ios.frameworks = 'QuartzCore'
     ss.ios.source_files = 'Core/Source/iOS/DTSidePanel/*.{h,m}'
@@ -90,6 +91,7 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'DTUTI' do |ss|
     ss.ios.deployment_target = '4.3'
+    ss.osx.deployment_target = '10.6'
     ss.ios.frameworks = ['MobileCoreServices']
     ss.source_files = 'Core/Source/DTUTI/*.{h,m}'
   end
@@ -105,13 +107,34 @@ Pod::Spec.new do |spec|
       sss.source_files = 'Core/Source/Externals/minizip/*.{h,c}'
     end
   end
-  
+
   spec.subspec 'DTProgressHUD' do |ss|
     ss.platform = :ios, '6.0'
     ss.dependency 'DTFoundation/UIKit'
-	ss.dependency 'DTFoundation/Core'
+	  ss.dependency 'DTFoundation/Core'
     ss.ios.frameworks = 'QuartzCore'
     ss.ios.source_files = 'Core/Source/iOS/DTProgressHUD/*.{h,m}'
+  end
+
+
+  spec.subspec 'DTScripting' do |ss|
+    ss.ios.deployment_target = '4.3'
+    ss.osx.deployment_target = '10.6'
+    ss.dependency 'DTFoundation/Core'
+    ss.source_files = 'Core/Source/DTScripting/*.{h,m}'
+  end
+
+  spec.subspec 'Debug' do |ss|
+    ss.platform = :ios, '4.3'
+    ss.dependency 'DTFoundation/Runtime'
+    ss.dependency 'DTFoundation/Core'
+    ss.source_files = 'Core/Source/iOS/Debug/*.{h,m}'
+  end
+
+  spec.subspec 'Runtime' do |ss|
+    ss.ios.deployment_target = '4.3'
+    ss.osx.deployment_target = '10.6'
+    ss.source_files = 'Core/Source/Runtime/*.{h,m}'
   end
 
 end
